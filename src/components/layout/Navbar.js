@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <a className="navbar-brand" href="#!">
-        Unsplash Image Search
+        Image Search
       </a>
       {/* <form className="form-inline my-2 my-lg-0 ml-md-auto search-form">
         <input
