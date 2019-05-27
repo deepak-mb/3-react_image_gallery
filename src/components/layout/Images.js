@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Image from "./Image";
 import axios from "axios";
-
+// import Loading from "./Loading";
 // console.log(process.env.REACT_APP_UNSPLASH_API_KEY);
 
 class Images extends Component {
