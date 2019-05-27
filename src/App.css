@@ -1,0 +1,13 @@
+* {
+  font-family: Roboto !important;
+}
+
+.form-control:focus {
+  border-color: #28a745 !important;
+  box-shadow: none;
+}
+
+.search-button:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
