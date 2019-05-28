@@ -5,6 +5,8 @@
 .form-control:focus {
   border-color: #28a745 !important;
   box-shadow: none;
+  max-width: 244px;
+  width: 244px;
 }
 
 .search-button:focus {

@@ -1,9 +1,6 @@
 import React from "react";
+import "../../images/loading.svg";
 
 export default function Loading() {
-  return (
-    <div className="cssload-container">
-      <div className="cssload-whirlpool" />
-    </div>
-  );
+  return <img src="loading.svg" alt="" />;
 }

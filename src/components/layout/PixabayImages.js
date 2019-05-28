@@ -1,27 +1,30 @@
 import React from "react";
 import "./image.css";
+import uuid from "uuid";
+// import defaultImage from "../../images/download.jpeg";
 
-const Image = props => {
+const PixabayImages = props => {
+  const { pixabayImages } = props;
   // console.log(props);
   return (
     <div className="image-inner-container" id="photos">
-      {props.images.map(image => (
+      {pixabayImages.map(image => (
         <a
-          href={image.urls.regular}
+          href={image.largeImageURL}
           target="_blank"
           className="anch"
-          key={image.id}
+          key={uuid()}
           rel="noopener noreferrer"
         >
-          <img src={image.urls.small} alt="" className="" key={image.id} />
+          <img src={image.webformatURL} alt="" className="" key={uuid()} />
           <div className="overlay">
             <div className="text">
               <img
-                src={image.user.profile_image.medium}
+                src={image.userImageURL}
                 alt="Profile pic"
                 className="profile-picture"
               />
-              <p>{image.user.name}</p>
+              <p className="user-name">{image.user}</p>
             </div>
           </div>
         </a>
@@ -30,4 +33,4 @@ const Image = props => {
   );
 };
 
-export default Image;
+export default PixabayImages;
